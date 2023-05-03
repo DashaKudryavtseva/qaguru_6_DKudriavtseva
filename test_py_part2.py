@@ -62,9 +62,7 @@ def test_find_suitable_user():
 # "Open Browser [Chrome]"
 
 def text_editor_func(func, *params):
-    s = f"{func.__name__}".title().replace("_", " ")
-    arguments = ", ".join(params)
-    s += f" [{arguments}]"
+    s = f"{func.__name__}".title().replace("_", " ") + f" [{', '.join(params)}]"
     return s
 
 
