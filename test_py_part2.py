@@ -63,6 +63,7 @@ def test_find_suitable_user():
 
 def text_editor_func(func, *params):
     s = f"{func.__name__}".title().replace("_", " ") + f" [{', '.join(params)}]"
+    print(s)
     return s
 
 
